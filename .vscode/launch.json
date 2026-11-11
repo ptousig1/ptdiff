@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug ptdiff",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin",
+                    "ptdiff"
+                ],
+                "filter": {
+                    "name": "ptdiff",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "left.txt",
+                "right.txt"
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
